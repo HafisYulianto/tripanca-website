@@ -3,10 +3,6 @@
     <div class="container py-5">
         <div class="row g-5 mb-5 align-items-center">
             <div class="col-lg-7">
-                <div class="position-relative mx-auto">
-                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email untuk berlangganan">
-                    <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Berlangganan</button>
-                </div>
             </div>
             <div class="col-lg-5">
                 <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
