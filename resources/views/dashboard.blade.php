@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title', 'Tripanca - Air Mineral Berkualitas')
+@section('title', 'Tripanca - Dashboard Admin')
 
 @section('content')
 
@@ -10,11 +10,11 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon bg-primary">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-image"></i>
                 </div>
                 <div class="stat-info">
-                    <h3>1,248</h3>
-                    <p>Total Penjualan</p>
+                    <h3>{{ $stats['banners'] }}</h3>
+                    <p>Total Banner</p>
                 </div>
             </div>
             <div class="stat-card">
@@ -22,98 +22,94 @@
                     <i class="fas fa-box"></i>
                 </div>
                 <div class="stat-info">
-                    <h3>5,420</h3>
-                    <p>Produk Terjual</p>
+                    <h3>{{ $stats['products'] }}</h3>
+                    <p>Total Produk</p>
                 </div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon bg-warning">
-                    <i class="fas fa-warehouse"></i>
+                    <i class="fas fa-blog"></i>
                 </div>
                 <div class="stat-info">
-                    <h3>12,850</h3>
-                    <p>Stok Tersedia</p>
+                    <h3>{{ $stats['blogs'] }}</h3>
+                    <p>Total Blog</p>
                 </div>
             </div>
             <div class="stat-card">
                 <div class="stat-icon bg-danger">
-                    <i class="fas fa-exclamation-triangle"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <div class="stat-info">
-                    <h3>8</h3>
-                    <p>Produk Low Stock</p>
+                    <h3>{{ $stats['testimonials'] }}</h3>
+                    <p>Total Ulasan</p>
                 </div>
             </div>
         </div>
 
-        <!-- Charts Section -->
-        <div class="charts-grid">
-            <div class="chart-card">
-                <div class="chart-header">
-                    <h3>Penjualan Bulanan</h3>
-                    <select>
-                        <option>30 Hari Terakhir</option>
-                        <option>3 Bulan Terakhir</option>
-                        <option>1 Tahun Terakhir</option>
-                    </select>
+        <!-- Second Row Stats -->
+        <div class="stats-grid" style="margin-bottom: 30px;">
+            <div class="stat-card">
+                <div class="stat-icon" style="background: #ede9fe; color: #7c3aed;">
+                    <i class="fas fa-images"></i>
                 </div>
-                <canvas id="salesChart"></canvas>
+                <div class="stat-info">
+                    <h3>{{ $stats['photos'] }}</h3>
+                    <p>Total Foto</p>
+                </div>
             </div>
-            <div class="chart-card">
-                <div class="chart-header">
-                    <h3>Kategori Produk</h3>
+            <div class="stat-card">
+                <div class="stat-icon" style="background: #fce7f3; color: #db2777;">
+                    <i class="fas fa-video"></i>
                 </div>
-                <canvas id="productChart"></canvas>
+                <div class="stat-info">
+                    <h3>{{ $stats['videos'] }}</h3>
+                    <p>Total Video</p>
+                </div>
             </div>
         </div>
 
-        <!-- Recent Orders -->
+        <!-- Quick Links -->
         <div class="recent-orders">
             <div class="chart-header">
-                <h3>Pesanan Terbaru</h3>
-                <a href="#">Lihat Semua</a>
+                <h3>Akses Cepat</h3>
             </div>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID Pesanan</th>
-                            <th>Customer</th>
-                            <th>Produk</th>
-                            <th>Jumlah</th>
-                            <th>Status</th>
-                            <th>Tanggal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#TRP001</td>
-                            <td>Toko Sejahtera</td>
-                            <td>Tripanca 600ml</td>
-                            <td>50 karton</td>
-                            <td><span class="status completed">Completed</span></td>
-                            <td>15 Mar 2024</td>
-                        </tr>
-                        <tr>
-                            <td>#TRP002</td>
-                            <td>Supermarket Jaya</td>
-                            <td>Tripanca Galon</td>
-                            <td>100 pcs</td>
-                            <td><span class="status processing">Processing</span></td>
-                            <td>14 Mar 2024</td>
-                        </tr>
-                        <tr>
-                            <td>#TRP003</td>
-                            <td>CV Mandiri</td>
-                            <td>Tripanca Oxygen</td>
-                            <td>25 karton</td>
-                            <td><span class="status pending">Pending</span></td>
-                            <td>14 Mar 2024</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row g-3" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 10px 0;">
+                <a href="/banner" class="quick-link-card" style="text-decoration: none; padding: 20px; background: #f8fafc; border-radius: 10px; text-align: center; transition: all 0.3s; border: 1px solid #e2e8f0;">
+                    <i class="fas fa-image fa-2x text-primary mb-2" style="display: block;"></i>
+                    <span style="color: #1e293b; font-weight: 600;">Kelola Banner</span>
+                </a>
+                <a href="{{ route('produks.index') }}" class="quick-link-card" style="text-decoration: none; padding: 20px; background: #f8fafc; border-radius: 10px; text-align: center; transition: all 0.3s; border: 1px solid #e2e8f0;">
+                    <i class="fas fa-box fa-2x text-success mb-2" style="display: block;"></i>
+                    <span style="color: #1e293b; font-weight: 600;">Kelola Produk</span>
+                </a>
+                <a href="/bloger" class="quick-link-card" style="text-decoration: none; padding: 20px; background: #f8fafc; border-radius: 10px; text-align: center; transition: all 0.3s; border: 1px solid #e2e8f0;">
+                    <i class="fas fa-blog fa-2x text-warning mb-2" style="display: block;"></i>
+                    <span style="color: #1e293b; font-weight: 600;">Kelola Blog</span>
+                </a>
+                <a href="/ulasan" class="quick-link-card" style="text-decoration: none; padding: 20px; background: #f8fafc; border-radius: 10px; text-align: center; transition: all 0.3s; border: 1px solid #e2e8f0;">
+                    <i class="fas fa-star fa-2x text-danger mb-2" style="display: block;"></i>
+                    <span style="color: #1e293b; font-weight: 600;">Kelola Ulasan</span>
+                </a>
+                <a href="/kelolafoto" class="quick-link-card" style="text-decoration: none; padding: 20px; background: #f8fafc; border-radius: 10px; text-align: center; transition: all 0.3s; border: 1px solid #e2e8f0;">
+                    <i class="fas fa-images fa-2x mb-2" style="display: block; color: #7c3aed;"></i>
+                    <span style="color: #1e293b; font-weight: 600;">Kelola Foto</span>
+                </a>
+                <a href="/videos" class="quick-link-card" style="text-decoration: none; padding: 20px; background: #f8fafc; border-radius: 10px; text-align: center; transition: all 0.3s; border: 1px solid #e2e8f0;">
+                    <i class="fas fa-video fa-2x mb-2" style="display: block; color: #db2777;"></i>
+                    <span style="color: #1e293b; font-weight: 600;">Kelola Video</span>
+                </a>
             </div>
         </div>
     </div>
 
 @endsection
+
+@push('styles')
+<style>
+    .quick-link-card:hover {
+        background: #e0f2fe !important;
+        border-color: #2563eb !important;
+        transform: translateY(-2px);
+    }
+</style>
+@endpush

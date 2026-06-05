@@ -170,7 +170,7 @@
 
         .nav-links {
             padding: 20px 0;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 140px);
             overflow-y: auto;
         }
 
@@ -209,6 +209,31 @@
         .nav-links i {
             width: 20px;
             text-align: center;
+        }
+
+        .sidebar-logout {
+            padding: 15px 20px;
+            border-top: 1px solid #334155;
+        }
+
+        .logout-btn {
+            width: 100%;
+            padding: 10px 15px;
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .logout-btn:hover {
+            background: rgba(239, 68, 68, 0.3);
+            color: #fef2f2;
         }
 
         /* Main Content */

@@ -20,7 +20,15 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $stats = [
+        'banners' => \App\Models\Banner::count(),
+        'products' => \App\Models\Product::count(),
+        'blogs' => \App\Models\Blog::count(),
+        'testimonials' => \App\Models\Testimonial::count(),
+        'photos' => \App\Models\Photo::count(),
+        'videos' => \App\Models\Video::count(),
+    ];
+    return view('dashboard', compact('stats'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/tentang', function () {
@@ -35,6 +43,11 @@ Route::get('/blog', function () {
     $blogs = \App\Models\Blog::whereNotNull('published_at')->orderBy('published_at', 'desc')->get();
     return view('landing.blog', compact('blogs'));
 });
+
+Route::get('/blog/{slug}', function ($slug) {
+    $blog = \App\Models\Blog::where('slug', $slug)->firstOrFail();
+    return view('landing.blog_detail', compact('blog'));
+})->name('blog.detail');
 
 Route::get('/bloger', [BlogController::class, 'index']);
 
@@ -56,6 +69,11 @@ Route::get('/video', function () {
 
 Route::get('/kontak', function () {
     return view('landing.kontak');
+});
+
+Route::get('/produk-kami', function () {
+    $products = \App\Models\Product::all();
+    return view('landing.produk', compact('products'));
 });
 
 Route::get('/banner', [BannerController::class, 'index'])->middleware('auth');
