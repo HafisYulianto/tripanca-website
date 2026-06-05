@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Tripanca Air Mineral</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{{ asset('build/assets/img/logo.png') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="/build/assets/css/dashboard.css" rel="stylesheet">
