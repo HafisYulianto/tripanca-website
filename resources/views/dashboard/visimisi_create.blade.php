@@ -67,13 +67,13 @@
 
             <div class="card mt-3">
                 <div class="card-header">
-                    <h5>Item Details (4 Items)</h5>
+                    <h5>Detail Item (4 Item)</h5>
                 </div>
                 <div class="card-body">
                     <!-- Item 1 -->
                     <div class="row mb-3">
                         <div class="col-md-3">
-                            <label for="item1_icon" class="form-label">Icon 1 (Font Awesome class)</label>
+                            <label for="item1_icon" class="form-label">Ikon 1 (Kelas Font Awesome)</label>
                             <input type="text" class="form-control" id="item1_icon" name="item1_icon" value="{{ old('item1_icon') }}" placeholder="fas fa-tint">
                         </div>
                         <div class="col-md-3">
@@ -88,7 +88,7 @@
                     <!-- Item 2 -->
                     <div class="row mb-3">
                         <div class="col-md-3">
-                            <label for="item2_icon" class="form-label">Icon 2 (Font Awesome class)</label>
+                            <label for="item2_icon" class="form-label">Ikon 2 (Kelas Font Awesome)</label>
                             <input type="text" class="form-control" id="item2_icon" name="item2_icon" value="{{ old('item2_icon') }}" placeholder="fas fa-leaf">
                         </div>
                         <div class="col-md-3">
@@ -103,7 +103,7 @@
                     <!-- Item 3 -->
                     <div class="row mb-3">
                         <div class="col-md-3">
-                            <label for="item3_icon" class="form-label">Icon 3 (Font Awesome class)</label>
+                            <label for="item3_icon" class="form-label">Ikon 3 (Kelas Font Awesome)</label>
                             <input type="text" class="form-control" id="item3_icon" name="item3_icon" value="{{ old('item3_icon') }}" placeholder="fas fa-users">
                         </div>
                         <div class="col-md-3">
@@ -118,7 +118,7 @@
                     <!-- Item 4 -->
                     <div class="row mb-3">
                         <div class="col-md-3">
-                            <label for="item4_icon" class="form-label">Icon 4 (Font Awesome class)</label>
+                            <label for="item4_icon" class="form-label">Ikon 4 (Kelas Font Awesome)</label>
                             <input type="text" class="form-control" id="item4_icon" name="item4_icon" value="{{ old('item4_icon') }}" placeholder="fas fa-rocket">
                         </div>
                         <div class="col-md-3">

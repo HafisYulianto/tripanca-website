@@ -7,7 +7,7 @@
 
         <!-- Email Address -->
         <div>
-            <label for="email" class="block font-semibold text-sm text-slate-300">Email Address</label>
+            <label for="email" class="block font-semibold text-sm text-slate-300">Alamat Email</label>
             <input id="email" 
                    class="block mt-2 w-full bg-slate-950/70 border border-slate-800 text-white placeholder-slate-500 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 focus:border-cyan-500 transition-all duration-200" 
                    type="email" 
@@ -40,12 +40,12 @@
                        type="checkbox" 
                        class="rounded bg-slate-950/70 border-slate-800 text-cyan-500 focus:ring-cyan-500/20 focus:ring-offset-slate-950" 
                        name="remember">
-                <span class="ms-2 text-sm text-slate-400 hover:text-slate-300 transition-colors">Remember me</span>
+                <span class="ms-2 text-sm text-slate-400 hover:text-slate-300 transition-colors">Ingat saya</span>
             </label>
 
             @if (Route::has('password.request'))
                 <a class="text-sm text-slate-400 hover:text-cyan-400 transition-colors" href="{{ route('password.request') }}">
-                    Forgot password?
+                    Lupa kata sandi?
                 </a>
             @endif
         </div>
@@ -54,7 +54,7 @@
         <div class="mt-6">
             <button type="submit" 
                     class="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold rounded-xl shadow-[0_4px_15px_rgba(25,64,154,0.3)] hover:shadow-[0_6px_20px_rgba(0,209,249,0.4)] hover:brightness-110 active:scale-[0.98] transition-all duration-200">
-                Sign In
+                Masuk
             </button>
         </div>
     </form>

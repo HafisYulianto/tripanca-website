@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Tripanca Air Mineral</title>
+    <title>Dashboard Admin - Tripanca Air Mineral</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="{{ asset('build/assets/img/logo.png') }}">
@@ -59,12 +59,12 @@
             <li class="{{ request()->is('kelolavisimisi*') ? 'active' : '' }}"><a href="{{ route('kelolavisimisi.index') }}"><i class="fas fa-eye"></i> <span>Visi & Misi</span></a></li>
             <li class="{{ request()->is('kelolafoto*') || request()->is('photos*') ? 'active' : '' }}"><a href="/kelolafoto"><i class="fas fa-images"></i> <span>Foto</span></a></li>
             <li class="{{ request()->is('videos*') ? 'active' : '' }}"><a href="/videos"><i class="fas fa-video"></i> <span>Video</span></a></li>
-            <li class="{{ request()->is('profile*') ? 'active' : '' }}"><a href="/profile"><i class="fas fa-user"></i> <span>Profile</span></a></li>
+            <li class="{{ request()->is('profile*') ? 'active' : '' }}"><a href="/profile"><i class="fas fa-user"></i> <span>Profil</span></a></li>
         </ul>
         <div class="sidebar-logout">
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button type="submit" class="logout-btn"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></button>
+                <button type="submit" class="logout-btn"><i class="fas fa-sign-out-alt"></i> <span>Keluar</span></button>
             </form>
         </div>
     </div>

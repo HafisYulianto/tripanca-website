@@ -33,7 +33,7 @@
                         <tr>
                             <td>
                                 @if($photo->image)
-                                    <img src="{{ asset('storage/' . $photo->image) }}" alt="Photo Image" style="max-width: 100px; max-height: 60px; object-fit: cover;">
+                                    <img src="{{ asset('storage/' . $photo->image) }}" alt="Gambar Foto" style="max-width: 100px; max-height: 60px; object-fit: cover;">
                                 @endif
                             </td>
                             <td>{{ Str::limit($photo->title, 30) }}</td>

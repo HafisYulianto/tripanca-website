@@ -32,7 +32,7 @@
             <label for="description" class="form-label">Deskripsi</label>
             <textarea class="form-control" id="description" name="description">{{ old('description', $video->description) }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Update Video</button>
+        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
         <a href="{{ route('videos.index') }}" class="btn btn-secondary">Batal</a>
     </form>
 </div>

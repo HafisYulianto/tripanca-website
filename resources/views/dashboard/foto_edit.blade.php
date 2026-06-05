@@ -24,7 +24,7 @@
             <label for="image" class="form-label">Foto</label>
             <input type="file" class="form-control" id="image" name="image">
             @if($photo->image)
-                <img src="{{ asset('storage/' . $photo->image) }}" alt="Current Photo" style="max-width: 200px; margin-top: 10px;">
+                <img src="{{ asset('storage/' . $photo->image) }}" alt="Foto saat ini" style="max-width: 200px; margin-top: 10px;">
             @endif
         </div>
         <div class="mb-3">
@@ -35,7 +35,7 @@
             <label for="description" class="form-label">Deskripsi</label>
             <textarea class="form-control" id="description" name="description">{{ old('description', $photo->description) }}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Update Foto</button>
+        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
         <a href="{{ route('photos.index') }}" class="btn btn-secondary">Batal</a>
     </form>
 </div>

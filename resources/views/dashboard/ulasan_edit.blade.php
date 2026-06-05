@@ -58,7 +58,7 @@
             @endif
         </div>
 
-        <button type="submit" class="btn btn-primary">Update Ulasan</button>
+        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
         <a href="{{ route('testimonials.index') }}" class="btn btn-secondary">Batal</a>
     </form>
 </div>

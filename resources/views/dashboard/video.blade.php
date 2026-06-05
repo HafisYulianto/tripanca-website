@@ -33,9 +33,9 @@
                         <tr>
                             <td>
                                 @if($video->thumbnail_url)
-                                    <img src="{{ $video->thumbnail_url }}" alt="Video Thumbnail" style="max-width: 150px; max-height: 90px; object-fit: cover;">
+                                    <img src="{{ $video->thumbnail_url }}" alt="Thumbnail Video" style="max-width: 150px; max-height: 90px; object-fit: cover;">
                                 @else
-                                    <span>No Thumbnail</span>
+                                    <span>Tidak Ada Thumbnail</span>
                                 @endif
                             </td>
                             <td>{{ \Illuminate\Support\Str::limit($video->title, 30) }}</td>
