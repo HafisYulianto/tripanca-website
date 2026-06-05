@@ -25,11 +25,11 @@
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-white mb-4">Tentang Kami</h4>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Mengapa Memilih Kami</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Galon Gratis</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Dispenser Air</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Cooler Air Mineral</a>
-                    <a href="#"><i class="fas fa-angle-right me-2"></i> Hubungi Kami</a>
+                    <a href="/tentang"><i class="fas fa-angle-right me-2"></i> Mengapa Memilih Kami</a>
+                    <a href="/produk-kami"><i class="fas fa-angle-right me-2"></i> Galon Gratis</a>
+                    <a href="/produk-kami"><i class="fas fa-angle-right me-2"></i> Dispenser Air</a>
+                    <a href="/produk-kami"><i class="fas fa-angle-right me-2"></i> Cooler Air Mineral</a>
+                    <a href="/kontak"><i class="fas fa-angle-right me-2"></i> Hubungi Kami</a>
                     <a href="#"><i class="fas fa-angle-right me-2"></i> Syarat & Ketentuan</a>
                 </div>
             </div>
