@@ -443,6 +443,7 @@
     background: var(--bs-white);
     border-radius: 10px;
     transition: 0.5s;
+    height: 100%;
 }
 
 .feature .feature-item:hover {
@@ -469,6 +470,7 @@
 
 .feature .feature-item a.btn {
     transition: 0.5s;
+    margin-top: auto;
 }
 
 .feature .feature-item:hover a.btn:hover {
