@@ -1,24 +1,18 @@
 <!-- Footer Start -->
 <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
     <div class="container py-5">
-        <div class="row g-5 mb-5 align-items-center">
-            <div class="col-lg-7">
-            </div>
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
         <div class="row g-5">
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <div class="footer-item">
-                        <img src="/build/assets/img/logo.png" alt="Logo" style="width:150px; height:auto;">
+                        <img src="/build/assets/img/logo.png" alt="Logo" class="mb-3" style="width:150px; height:auto;">
                         <p class="mb-3">PT Tirta Panca Anugrah (Tripanca) adalah produsen air minum dalam kemasan terpercaya dengan komitmen menyediakan air mineral berkualitas dari sumber mata air pegunungan terpilih.</p>
+                        <div class="d-flex align-items-center mt-3">
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-3" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
