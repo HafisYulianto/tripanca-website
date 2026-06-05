@@ -1,61 +1,97 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Website Resmi PT Tirta Panca Anugrah (Tripanca)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website profil perusahaan resmi dan sistem manajemen konten (CMS) admin untuk **PT Tirta Panca Anugrah (Tripanca)**, produsen air minum dalam kemasan (AMDK) berkualitas tinggi dari sumber mata air pegunungan sejak tahun 2003.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🌐 Halaman Publik (Landing Page)
+*   **Beranda (Home):** Dilengkapi slider banner dinamis, review/testimoni pelanggan, dan 3 artikel blog terbaru.
+*   **Tentang Kami & Sejarah:** Profil lengkap perusahaan dan latar belakang perjalanan Tripanca selama 20 tahun.
+*   **Layanan:** Informasi layanan penyediaan air mineral rumah tangga dan komersial.
+*   **Visi & Misi:** Menampilkan visi misi perusahaan secara dinamis yang diambil dari database.
+*   **Produk:** Galeri katalog produk air mineral (galon, kemasan botol 600ml, 1500ml, dll) beserta detail harga.
+*   **Blog/Berita:** Halaman artikel kesehatan dan informasi terbaru perusahaan.
+*   **Galeri Foto & Video:** Dokumentasi aktivitas perusahaan lengkap dengan pemutar video YouTube terintegrasi.
+*   **Kontak:** Halaman hubungi kami terintegrasi peta lokasi.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🔐 Panel Admin (CMS Dashboard)
+*   **Dashboard Statistik:** Dilengkapi widget total penjualan, produk terjual, stok, dan grafik interaktif menggunakan Chart.js.
+*   **Kelola Banner:** CRUD slider halaman depan (gambar, judul, subjudul, deskripsi, link tombol).
+*   **Kelola Produk:** CRUD katalog produk (nama, ukuran, harga, gambar).
+*   **Kelola Ulasan/Testimoni:** CRUD ulasan pelanggan beserta rating bintang.
+*   **Kelola Blog:** CMS penulisan artikel (judul, excerpt, konten lengkap, gambar, status publikasi).
+*   **Kelola Visi & Misi:** Pengeditan dinamis teks visi misi dan 4 poin fitur unggulan.
+*   **Kelola Foto & Video:** Manajemen dokumentasi (konversi otomatis tautan YouTube biasa ke format *embed*).
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠️ Spesifikasi Teknologi (Tech Stack)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+*   **Backend:** Laravel 12.0 (PHP >= 8.2)
+*   **Frontend Tools:** Vite 7.0 & Laravel Vite Plugin
+*   **Gaya & Desain:**
+    *   **Landing Page:** Bootstrap 5 (statis) dipadukan dengan jQuery, WOW.js, dan Owl Carousel.
+    *   **Dashboard Admin:** Kustom CSS modern dengan paduan warna Tripanca (*Deep Blue* & *Cyan*).
+*   **Autentikasi:** Laravel Breeze (telah didesain ulang agar bernuansa gelap dan premium).
+*   **Database:** MySQL
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 💻 Panduan Instalasi Lokal
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di komputer lokal Anda:
 
-### Premium Partners
+1.  **Clone Repositori:**
+    ```bash
+    git clone https://github.com/HafisYulianto/tripanca-website.git
+    cd tripanca-website
+    ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+2.  **Instalasi Dependensi PHP & JavaScript:**
+    ```bash
+    composer install
+    npm install
+    ```
 
-## Contributing
+3.  **Konfigurasi Environment:**
+    Salin file `.env.example` menjadi `.env`:
+    ```bash
+    copy .env.example .env
+    ```
+    Buka file `.env` dan sesuaikan pengaturan database Anda:
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=tripanca_db
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+4.  **Generate Application Key:**
+    ```bash
+    php artisan key:generate
+    ```
 
-## Code of Conduct
+5.  **Migrasi & Seed Database:**
+    Pastikan MySQL/XAMPP Anda sudah aktif dan database `tripanca_db` sudah dibuat, lalu jalankan:
+    ```bash
+    php artisan migrate --seed
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+6.  **Jalankan Server Lokal:**
+    Jalankan server Laravel dan compiler aset Vite secara bersamaan:
+    *   **Server Backend:** `php artisan serve` (berjalan di `http://127.0.0.1:8000`)
+    *   **Vite Dev Server:** `npm run dev`
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🔑 Akun Administrator Default
 
-## License
+Gunakan kredensial berikut untuk masuk ke halaman Dashboard Admin (`http://127.0.0.1:8000/login`):
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+*   **Email (Username):** `admin@tripanca.com`
+*   **Password:** `admin123`
+
