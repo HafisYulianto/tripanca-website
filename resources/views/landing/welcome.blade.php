@@ -20,33 +20,33 @@ $products = \App\Models\Product::all();
             <div class=" col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="fas fa-hand-holding-water text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">Kualitas Terjamin</a>
+                    <a href="/layanan" class="h4 mb-3">Kualitas Terjamin</a>
                     <p class="mb-3">Setiap produk Tripanca melalui proses quality control yang ketat untuk memastikan kualitas dan keamanan air mineral.</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="fas fa-filter text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">Proses Filtrasi Modern</a>
+                    <a href="/layanan" class="h4 mb-3">Proses Filtrasi Modern</a>
                     <p class="mb-3">Menggunakan teknologi filtrasi terkini untuk menjaga kemurnian air tanpa mengurangi kandungan mineral alaminya.</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="fas fa-recycle text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">Kemasan Ramah Lingkungan</a>
+                    <a href="/layanan" class="h4 mb-3">Kemasan Ramah Lingkungan</a>
                     <p class="mb-3">Kemasan Tripanca didesain dengan memperhatikan aspek lingkungan dan dapat didaur ulang.</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="fas fa-microscope text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">Kontrol Laboratorium</a>
+                    <a href="/layanan" class="h4 mb-3">Kontrol Laboratorium</a>
                     <p class="mb-3">Setiap batch produk diuji di laboratorium internal untuk memastikan standar kualitas yang konsisten.</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@ $products = \App\Models\Product::all();
                                         <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-tint text-white fa-2x"></i></div>
                                     </div>
                                     <div class="">
-                                        <a href="#" class="h4 d-inline-block mb-3">Pelanggan Puas</a>
+                                        <a href="/tentang" class="h4 d-inline-block mb-3">Pelanggan Puas</a>
                                         <p class="mb-0">Ribuan pelanggan telah mempercayai Tripanca sebagai pilihan utama air mineral sehari-hari mereka.</p>
                                     </div>
                                 </div>
@@ -94,14 +94,14 @@ $products = \App\Models\Product::all();
                                         <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-faucet text-white fa-2x"></i></div>
                                     </div>
                                     <div class="">
-                                        <a href="#" class="h4 d-inline-block mb-3">Produk Standar</a>
+                                        <a href="/tentang" class="h4 d-inline-block mb-3">Produk Standar</a>
                                         <p class="mb-0">Semua produk Tripanca memenuhi standar nasional dan internasional untuk keamanan pangan.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-secondary rounded-pill py-3 px-5">Baca Selengkapnya</a>
+                    <a href="/tentang" class="btn btn-secondary rounded-pill py-3 px-5">Baca Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -294,9 +294,9 @@ $products = \App\Models\Product::all();
                     <img src="{{ $product->image ? asset('storage/' . $product->image) : '/build/assets/img/water.png' }}" class="img-fluid w-100 rounded-top" alt="Image">
                     <div class="product-content bg-light text-center rounded-bottom p-4">
                         <p>{{ $product->size }}</p>
-                        <a href="#" class="h4 d-inline-block mb-3">{{ $product->name }}</a>
+                        <a href="/produk-kami" class="h4 d-inline-block mb-3">{{ $product->name }}</a>
                         <p class="fs-4 text-primary mb-3">Rp {{ number_format($product->price, 0, ',', '.') }}</p>
-                        <a href="#" class="btn btn-secondary rounded-pill py-2 px-4">Baca Selengkapnya</a>
+                        <a href="/produk-kami" class="btn btn-secondary rounded-pill py-2 px-4">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -323,9 +323,9 @@ $products = \App\Models\Product::all();
                         <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> {{ \Carbon\Carbon::parse($blog->published_at)->format('d M Y') }}</div>
                     </div>
                     <div class="blog-content rounded-bottom p-4">
-                        <a href="#" class="h4 d-inline-block mb-3">{{ $blog->title }}</a>
+                        <a href="{{ route('blog.detail', $blog->slug) }}" class="h4 d-inline-block mb-3">{{ $blog->title }}</a>
                         <p>{{ $blog->excerpt }}</p>
-                        <a href="#" class="fw-bold text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                        <a href="{{ route('blog.detail', $blog->slug) }}" class="fw-bold text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>

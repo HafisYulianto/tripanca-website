@@ -28,7 +28,7 @@
                                             <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-industry text-white fa-2x"></i></div>
                                         </div>
                                         <div class="">
-                                            <a href="#" class="h4 d-inline-block mb-3">Produksi Air Mineral</a>
+                                            <a href="/produk-kami" class="h4 d-inline-block mb-3">Produksi Air Mineral</a>
                                             <p class="mb-0">Kegiatan utama kami dalam memproduksi dan mengemas air mineral berkualitas tinggi dari sumber mata air pegunungan.</p>
                                         </div>
                                     </div>
@@ -43,14 +43,14 @@
                                             <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-truck text-white fa-2x"></i></div>
                                         </div>
                                         <div class="">
-                                            <a href="#" class="h4 d-inline-block mb-3">Distribusi dan Logistik</a>
+                                            <a href="/produk-kami" class="h4 d-inline-block mb-3">Distribusi dan Logistik</a>
                                             <p class="mb-0">Jaringan distribusi yang luas untuk memastikan produk Tripanca tersedia di seluruh Indonesia dengan efisiensi tinggi.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-secondary rounded-pill py-3 px-5">Pelajari Lebih Lanjut</a>
+                        <a href="/produk-kami" class="btn btn-secondary rounded-pill py-3 px-5">Pelajari Lebih Lanjut</a>
                     </div>
                 </div>
             </div>

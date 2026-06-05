@@ -28,7 +28,7 @@
                                         <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-eye text-white fa-2x"></i></div>
                                     </div>
                                     <div class="">
-                                        <a href="#" class="h4 d-inline-block mb-3">{{ $visimisi->visi_title ?? 'Visi Kami' }}</a>
+                                        <a href="/produk-kami" class="h4 d-inline-block mb-3">{{ $visimisi->visi_title ?? 'Visi Kami' }}</a>
                                         <p class="mb-0">{{ $visimisi->visi_content ?? 'Menjadi pemimpin utama dalam penyediaan air mineral berkualitas tinggi di Indonesia, yang diakui atas inovasi, keberlanjutan, dan kontribusi positif terhadap kesehatan masyarakat.' }}</p>
                                     </div>
                                 </div>
@@ -43,14 +43,14 @@
                                         <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;"><i class="fas fa-bullseye text-white fa-2x"></i></div>
                                     </div>
                                     <div class="">
-                                        <a href="#" class="h4 d-inline-block mb-3">{{ $visimisi->misi_title ?? 'Misi Kami' }}</a>
+                                        <a href="/produk-kami" class="h4 d-inline-block mb-3">{{ $visimisi->misi_title ?? 'Misi Kami' }}</a>
                                         <p class="mb-0">{{ $visimisi->misi_content ?? 'Menyediakan air mineral murni dan aman melalui proses produksi modern, sambil menjaga lingkungan dan memastikan aksesibilitas bagi semua konsumen.' }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-secondary rounded-pill py-3 px-5">Pelajari Lebih Lanjut</a>
+                    <a href="/produk-kami" class="btn btn-secondary rounded-pill py-3 px-5">Pelajari Lebih Lanjut</a>
                 </div>
             </div>
         </div>
@@ -69,33 +69,33 @@
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="{{ $visimisi->item1_icon ?? 'fas fa-tint' }} text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">{{ $visimisi->item1_title ?? 'Kualitas Premium' }}</a>
+                    <a href="/layanan" class="h4 mb-3">{{ $visimisi->item1_title ?? 'Kualitas Premium' }}</a>
                     <p class="mb-3">{{ $visimisi->item1_content ?? 'Memastikan setiap tetes air mineral Tripanca memenuhi standar tertinggi untuk kesehatan dan kesegaran.' }}</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="{{ $visimisi->item2_icon ?? 'fas fa-leaf' }} text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">{{ $visimisi->item2_title ?? 'Keberlanjutan Lingkungan' }}</a>
+                    <a href="/layanan" class="h4 mb-3">{{ $visimisi->item2_title ?? 'Keberlanjutan Lingkungan' }}</a>
                     <p class="mb-3">{{ $visimisi->item2_content ?? 'Menerapkan praktik ramah lingkungan dalam produksi dan distribusi untuk menjaga sumber daya alam.' }}</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="{{ $visimisi->item3_icon ?? 'fas fa-users' }} text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">{{ $visimisi->item3_title ?? 'Kepuasan Pelanggan' }}</a>
+                    <a href="/layanan" class="h4 mb-3">{{ $visimisi->item3_title ?? 'Kepuasan Pelanggan' }}</a>
                     <p class="mb-3">{{ $visimisi->item3_content ?? 'Mendahulukan kebutuhan pelanggan dengan layanan prima dan produk yang dapat diandalkan setiap hari.' }}</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="feature-item p-4">
                     <div class="feature-icon mb-3"><i class="{{ $visimisi->item4_icon ?? 'fas fa-rocket' }} text-white fa-3x"></i></div>
-                    <a href="#" class="h4 mb-3">{{ $visimisi->item4_title ?? 'Inovasi Berkelanjutan' }}</a>
+                    <a href="/layanan" class="h4 mb-3">{{ $visimisi->item4_title ?? 'Inovasi Berkelanjutan' }}</a>
                     <p class="mb-3">{{ $visimisi->item4_content ?? 'Terus berinovasi dalam teknologi filtrasi dan kemasan untuk memenuhi tuntutan pasar yang dinamis.' }}</p>
-                    <a href="#" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
+                    <a href="/layanan" class="btn text-secondary">Baca Selengkapnya <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
