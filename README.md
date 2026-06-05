@@ -1,6 +1,16 @@
-# Website Resmi PT Tirta Panca Anugrah (Tripanca)
+<p align="center">
+  <img src="public/build/assets/img/logo.png" alt="Tripanca Logo" width="240">
+</p>
 
-Website profil perusahaan resmi dan sistem manajemen konten (CMS) admin untuk **PT Tirta Panca Anugrah (Tripanca)**, produsen air minum dalam kemasan (AMDK) berkualitas tinggi dari sumber mata air pegunungan sejak tahun 2003.
+<h1 align="center">Website Resmi PT Tirta Panca Anugrah (Tripanca)</h1>
+
+<p align="center">
+  <strong>Website profil perusahaan dan sistem manajemen konten (CMS) admin resmi untuk PT Tirta Panca Anugrah (Tripanca)</strong>
+</p>
+
+<p align="center">
+  Produsen air minum dalam kemasan (AMDK) berkualitas tinggi dari sumber mata air pegunungan sejak tahun 2003.
+</p>
 
 ---
 
@@ -86,12 +96,4 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di komputer loka
     *   **Server Backend:** `php artisan serve` (berjalan di `http://127.0.0.1:8000`)
     *   **Vite Dev Server:** `npm run dev`
 
----
-
-## 🔑 Akun Administrator Default
-
-Gunakan kredensial berikut untuk masuk ke halaman Dashboard Admin (`http://127.0.0.1:8000/login`):
-
-*   **Email (Username):** `admin@tripanca.com`
-*   **Password:** `admin123`
 
